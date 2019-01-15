@@ -8,6 +8,9 @@
 
 import UIKit
 
+// 1. Conform ViewController to MKMapViewDelegate
+// Delegate Pattern: so that we can reuse our annotation views
+
 class ViewController: UIViewController {
     
 //------------------------------------------
@@ -25,8 +28,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // 1. Add subviews
-        // 2. NSLayoutConstraints activation
+        // 1. mapView add the gesture recognizer
+        // 2. mapView's delegate should be the view controller
+        // 3. longPressGestureRecognizer add target for selector action method called handleLongPress
+        // 4. Add subview for map view
+        // 5. NSLayoutConstraints activation
         
     }
     
