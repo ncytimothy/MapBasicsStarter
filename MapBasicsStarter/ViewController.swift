@@ -51,7 +51,8 @@ class ViewController: UIViewController {
     
 //------------------------------------------
     // MARK: - MapView Delegate Methods
-    // 1. Add mapView(_ mapView:MKMapView, didSelect view: MKAnnotationView)
+    // 1. mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation)
+    // 2. Add mapView(_ mapView:MKMapView, didSelect view: MKAnnotationView)
     
 
 
