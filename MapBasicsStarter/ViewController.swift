@@ -31,6 +31,9 @@ class ViewController: UIViewController {
         // 1. mapView add the gesture recognizer
         // 2. mapView's delegate should be the view controller
         // 3. longPressGestureRecognizer add target for selector action method called handleLongPress
+        // Example: view.addTarget(self, action: #selector(handleView))
+        // self: just means that we are referencing our view controller
+        // We will see handle view below...
         // 4. Add subview for map view
         // 5. NSLayoutConstraints activation
         
@@ -39,6 +42,12 @@ class ViewController: UIViewController {
 //------------------------------------------
     // MARK: - Actions
     // 1. Add handleLongPress
+    
+    
+    // Example: handleView
+//    @objc func handleView() {
+//       print("handling view...")
+//    }
     
 //------------------------------------------
     // MARK: - MapView Delegate Methods
